@@ -11,6 +11,7 @@
 body{
   width: 100vw;
   height: 100vh;
+  padding: 2.5vh 2.5vw;
 }
 
 #maincontentLogin {
@@ -46,5 +47,21 @@ footer{
 form  {
   height: 90vh;
   width: 40vw;
+}
+
+form>input{
+  display: block;
+  border:none;
+  border-bottom: 2px solid grey;
+}
+
+
+.sm>a{
+  text-decoration: none;
+  width: 30vw;
+  border: 1px solid purple;
+  display: block;
+  margin: 0 auto;
+  padding: 2vh ;
 }
 
