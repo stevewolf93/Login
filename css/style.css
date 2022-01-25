@@ -9,33 +9,35 @@
 body {
   width: 100vw;
   height: 100vh;
-  padding: 2.5vh 2.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #4267b2;
 }
 /* Big Container for all Login options */
 #maincontentLogin {
-  width: 95vw;
-  height: 90vh;
-  border: 2px solid rgb(218, 218, 218);
+  width: 95%;
+  height: 90%;
+  border: 2px solid white;
   display: flex;
   align-content: center;
   justify-content: center;
-  background-color: aliceblue;
 }
 /*  Register and PW reset */
 #footer {
-  width: 95vw;
-  height: 5vh;
-  border: 2px solid rgb(211, 211, 211);
-  background-color: rgb(238, 252, 255);
-}
-#footer > span {
-  text-align: center;
-  display: block;
-  font-size: 2rem;
+  width: 95%;
+  height: 5%;
+  border: 2px solid #ffffff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: aliceblue;
 }
 #footer > span > a {
-  color: blue;
+  color: #d2e3f3;
   text-decoration: none;
 }
 /* Container for One button Login  */
@@ -52,7 +54,7 @@ body {
 #twitter,
 #facebook,
 #google {
-  width: 30vw;
+  width: 100%;
   display: block;
   padding: 2vh;
   font-size: 3rem;
@@ -69,6 +71,9 @@ body {
 #google {
   background-color: #dd4b39;
 }
+.sm{
+  border: aliceblue 1px solid;
+}
 /* divider space between */
 #divider {
   width: 15%;
@@ -79,7 +84,7 @@ body {
   position: absolute;
   top: 20%;
   right: 50%;
-  border: solid grey 2px;
+  border: solid aliceblue 2px;
   height: 60%;
   width: 0;
   z-index: 0;
@@ -87,7 +92,7 @@ body {
 #divider > div:last-of-type {
   position: absolute;
   margin: 45vh 5.75vw;
-  border: solid grey 2px;
+  border: solid aliceblue 2px;
   height: 4rem;
   width: 4rem;
   z-index: 1;
@@ -98,24 +103,27 @@ body {
 #traditionalLogin > h2 {
   text-align: center;
   font-size: 4rem;
+  color: aliceblue;
 }
 form {
-  height: 90vh;
-  width: 40vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
 }
 
 form > input {
   display: block;
   border: none;
-  border-bottom: 2px solid grey;
-  width: 30vw;
+  border-bottom: 2px solid aliceblue;
+  width: 90%;
   align-self: center;
   height: 10vh;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
+  background-color: #65b1ff;
 }
 
 form > div {
@@ -128,7 +136,7 @@ form > div {
 
 div > label {
   font-size: 2rem;
-  color: #8a8a8a;
+  color: aliceblue;
 }
 [type="checkbox"] {
   width: 2rem;
