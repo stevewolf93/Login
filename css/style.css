@@ -13,55 +13,148 @@ body{
   height: 100vh;
   padding: 2.5vh 2.5vw;
 }
-
+/* Big Container for all Login options */
 #maincontentLogin {
   width: 95vw;
  height: 90vh;
- border: 1px solid black;
+ border: 2px solid rgb(83, 83, 83);
  display: flex;
  position: relative;
 }
+
+/*  Register and PW reset */
 #footer{
   width: 95vw;
   height: 5vh;
-  border: 1px solid rgb(255, 0, 0);
+  border: 2px solid rgb(105, 105, 105);
+  background-color: rgb(238, 252, 255);
+}
+#footer>span{
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+}
+#footer>span>a{
+  color:blue;
+  text-decoration: none;
 }
 
+/* Container for One button Login  */
 #oneButtonLogin , #traditionalLogin{
-  border: 1px solid red;
   width: 40vw;
   height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
+/* oneklick links */
+#twitter , #facebook ,#google{
+  width: 30vw;
+  display: block;
+  padding: 2vh ;
+  font-size: 3rem;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+#twitter {
+  background-color: darkblue;
+}
+#facebook {
+  background-color: blue;
+}
+#google {
+  background-color: rgb(255, 60, 0);
+}
+#google::before{
+  content: "g+ | ";  
+}
+/* divider space between */
 #divider {
-  border: 1px solid green;
   width: 15vw;
   height: 90vh;
+  position: relative;
+ 
 }
 
-.sm {
-  border: 1px solid black;
-  margin: 25% auto;
+#divider > div:first-of-type{
+  position: absolute;
+  top: 20%;
+  right: 50%;
+  border: solid grey 2px;
+  height: 60%;
+  width: 0;
+  z-index: -1;
+}
+#divider > div:last-of-type{
+  position: absolute;
+  margin: 45vh 5.75vw;
+  border: solid grey 2px;
+  height: 4rem;
+  width: 4rem;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* traditional login on right */
+#traditionalLogin > h2{
+  text-align: center;
+  font-size: 4rem;
+  margin: 2vh auto;
 }
 
 form  {
   height: 90vh;
   width: 40vw;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 form>input{
   display: block;
   border:none;
   border-bottom: 2px solid grey;
+  width: 30vw;
+  align-self: center;
+  height: 10vh;
+  text-align: center;
+  font-size: 3rem;
+}
+
+form>div{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+
+}
+
+input + span{
+  font-size: 2rem;
+}
+
+[type="checkbox"]{
+ border: dotted 2px red;
+ top: 20px
 }
 
 
-.sm>a{
-  text-decoration: none;
-  width: 30vw;
-  border: 1px solid purple;
-  display: block;
-  margin: 0 auto;
-  padding: 2vh ;
+form>div>input:last-of-type{
+  width: 15vw;
+  font-size: 2rem;
+  border: none;
+  background-color: rgb(0, 38, 255);
+  border-radius: 5px;
+  color: white;
+
+}
+
+form>div>input:hover{
+  cursor: pointer;
+  background-color: rgb(49, 80, 255);
 }
 
