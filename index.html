@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+
 </head>
 <body>
 <!-- Main Container -->
@@ -14,9 +16,9 @@
     <div id="maincontentLogin">
       <!-- Container for One button Login  -->
       <div id="oneButtonLogin">
-        <div class="sm" ><a href="http://"id="facebook">Facebook login</a></div>
-        <div class="sm" ><a href="http://" id="google">Google+ login</a></div>
-        <div class="sm" ><a href="http://" id="twitter">Twitter login</a></div>
+        <div class="sm" ><a href="http://"id="facebook"> <i class="fab fa-facebook-f"></i> | Facebook login </a></div>
+        <div class="sm" ><a href="http://" id="google"> <i class="fab fa-google-plus-g"></i> | Google+ login</a></div>
+        <div class="sm" ><a href="http://" id="twitter"><i class="fab fa-twitter"></i> | Twitter login</a></div>
       </div>
       <!-- Divider -->
       <div id="divider">
@@ -30,12 +32,12 @@
         <H2>Sign in with</H2>
         <!-- Form  Block-->
         <form action="index.js">
-          <input type="email" name="" id="" placeholder="Username or email">
+          <input type="email" name="" id="" placeholder="&#x270E; Username or email">
           <input type="password" name="" id="" placeholder=" Password">
           <!-- Form inline -->
           <div>
-            <input type="checkbox" name="" id=""> 
-            <span>Remember me</span> 
+            <input type="checkbox" name="rememberMe" id=""> 
+            <label for="rememberMe">Remember Me</label>
             <input type="submit" value="Login">
           </div>
           

@@ -1,3 +1,5 @@
+
+
 *{
   margin: 0;
   padding: 0;
@@ -67,9 +69,6 @@ body{
 #google {
   background-color: rgb(255, 60, 0);
 }
-#google::before{
-  content: "g+ | ";  
-}
 /* divider space between */
 #divider {
   width: 15vw;
@@ -130,26 +129,30 @@ form>div{
   flex-direction: row;
   justify-content: space-around;
   position: relative;
-
 }
 
-input + span{
+
+
+
+[type="checkbox"] + label {
   font-size: 2rem;
 }
-
-[type="checkbox"]{
- border: dotted 2px red;
- top: 20px
+[type="checkbox"] {
+  border: none;
+  width: 2rem;
+  height: 2rem;
 }
 
 
 form>div>input:last-of-type{
   width: 15vw;
+  height: 5vh;
   font-size: 2rem;
   border: none;
   background-color: rgb(0, 38, 255);
   border-radius: 5px;
   color: white;
+  
 
 }
 
