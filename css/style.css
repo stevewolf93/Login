@@ -1,16 +1,12 @@
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   font-size: 16px;
 }
-
-body{
+body {
   width: 100vw;
   height: 100vh;
   padding: 2.5vh 2.5vw;
@@ -19,76 +15,76 @@ body{
 /* Big Container for all Login options */
 #maincontentLogin {
   width: 95vw;
- height: 90vh;
- border: 2px solid rgb(83, 83, 83);
- display: flex;
- position: relative;
+  height: 90vh;
+  border: 2px solid rgb(218, 218, 218);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: aliceblue;
 }
-
 /*  Register and PW reset */
-#footer{
+#footer {
   width: 95vw;
   height: 5vh;
-  border: 2px solid rgb(105, 105, 105);
+  border: 2px solid rgb(211, 211, 211);
   background-color: rgb(238, 252, 255);
 }
-#footer>span{
+#footer > span {
   text-align: center;
   display: block;
   font-size: 2rem;
 }
-#footer>span>a{
-  color:blue;
+#footer > span > a {
+  color: blue;
   text-decoration: none;
 }
-
 /* Container for One button Login  */
-#oneButtonLogin , #traditionalLogin{
-  width: 40vw;
-  height: 90vh;
+#oneButtonLogin,
+#traditionalLogin {
+  width: 45%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 /* oneklick links */
-#twitter , #facebook ,#google{
+#twitter,
+#facebook,
+#google {
   width: 30vw;
   display: block;
-  padding: 2vh ;
+  padding: 2vh;
   font-size: 3rem;
-  margin: 0 auto;
   text-decoration: none;
   text-align: center;
   color: white;
 }
 #twitter {
-  background-color: #1DA1F2
-  ;
+  background-color: #1da1f2;
 }
 #facebook {
-  background-color: #4267B2;
+  background-color: #4267b2;
 }
 #google {
-  background-color: #DD4B39;
+  background-color: #dd4b39;
 }
 /* divider space between */
 #divider {
-  width: 15vw;
-  height: 90vh;
-  position: relative;
- 
+  width: 15%;
+  height: 100%;
+  background-color: #4267b2;
 }
-
-#divider > div:first-of-type{
+#divider > div:first-of-type {
   position: absolute;
   top: 20%;
   right: 50%;
   border: solid grey 2px;
   height: 60%;
   width: 0;
-  z-index: -1;
+  z-index: 0;
 }
-#divider > div:last-of-type{
+#divider > div:last-of-type {
   position: absolute;
   margin: 45vh 5.75vw;
   border: solid grey 2px;
@@ -98,26 +94,22 @@ body{
   border-radius: 50%;
   background-color: white;
 }
-
 /* traditional login on right */
-#traditionalLogin > h2{
+#traditionalLogin > h2 {
   text-align: center;
   font-size: 4rem;
-  margin: 2vh auto;
 }
-
-form  {
+form {
   height: 90vh;
   width: 40vw;
- 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-form>input{
+form > input {
   display: block;
-  border:none;
+  border: none;
   border-bottom: 2px solid grey;
   width: 30vw;
   align-self: center;
@@ -126,40 +118,32 @@ form>input{
   font-size: 3rem;
 }
 
-form>div{ 
+form > div {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: #4267b2; */
 }
 
-
-
-
-[type="checkbox"] + label {
+div > label {
   font-size: 2rem;
+  color: #8a8a8a;
 }
 [type="checkbox"] {
-  border: none;
   width: 2rem;
   height: 2rem;
 }
-
-
-form>div>input:last-of-type{
+form > div > input:last-of-type {
   width: 15vw;
   height: 5vh;
   font-size: 2rem;
   border: none;
-  background-color: rgb(0, 38, 255);
+  background-color: #65b1ff;
   border-radius: 5px;
   color: white;
-  
-
 }
-
-form>div>input:hover{
+form > div > input:hover {
   cursor: pointer;
   background-color: rgb(49, 80, 255);
 }
-
