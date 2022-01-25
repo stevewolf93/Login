@@ -56,8 +56,8 @@ body {
 #google {
   width: 100%;
   display: block;
-  padding: 2vh;
-  font-size: 3rem;
+  padding: 5%;
+  font-size: 2.2rem;
   text-decoration: none;
   text-align: center;
   color: white;
@@ -79,6 +79,8 @@ body {
   width: 15%;
   height: 100%;
   background-color: #4267b2;
+  display: flex;
+  position: relative;
 }
 #divider > div:first-of-type {
   position: absolute;
@@ -91,10 +93,11 @@ body {
 }
 #divider > div:last-of-type {
   position: absolute;
-  margin: 45vh 5.75vw;
+  left: 27%;
+  top: 45%;
   border: solid aliceblue 2px;
-  height: 4rem;
-  width: 4rem;
+  height: 7rem;
+  width: 7rem;
   z-index: 1;
   border-radius: 50%;
   background-color: white;
