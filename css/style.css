@@ -76,28 +76,26 @@ body {
 }
 /* divider space between */
 #divider {
-  width: 15%;
+  width: 5%;
   height: 100%;
-  background-color: #4267b2;
   display: flex;
   position: relative;
 }
 #divider > div:first-of-type {
   position: absolute;
-  top: 20%;
+  top: 12.50%;
   right: 50%;
   border: solid aliceblue 2px;
-  height: 60%;
+  height: 75%;
   width: 0;
   z-index: 0;
 }
 #divider > div:last-of-type {
   position: absolute;
-  left: 27%;
   top: 45%;
   border: solid aliceblue 2px;
-  height: 7rem;
-  width: 7rem;
+  height: 5.5rem;
+  width: 5.5rem;
   z-index: 1;
   border-radius: 50%;
   background-color: white;
